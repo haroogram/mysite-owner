@@ -82,7 +82,7 @@ build {
 
       "echo '[4/9] Setting up Python venv & dependencies...'",
       "python3 -m venv /home/ubuntu/venv",
-      "bash -c 'source /home/ubuntu/venv/bin/activate && pip install --upgrade pip && pip install django gunicorn mysqlclient'",
+      "bash -c 'source /home/ubuntu/venv/bin/activate && pip install --upgrade pip && pip install django gunicorn mysqlclient python-dotenv'",
 
       "echo '[5/9] Setting permissions for ubuntu user...'",
       "sudo chown -R ubuntu:ubuntu /home/ubuntu/django_work",
