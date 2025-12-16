@@ -73,7 +73,7 @@ build {
       "echo '[2/9] Installing AWS CLI v2...'",
       "curl 'https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip' -o '/tmp/awscliv2.zip'",
       "unzip /tmp/awscliv2.zip -d /tmp",
-      "sudo /tmp/aws/install",
+      "sudo /tmp/aws/install --update",
 
       "echo '[3/9] Setting up Django app directory...'",
       "sudo mkdir -p /home/ubuntu/django_work/mysite",
